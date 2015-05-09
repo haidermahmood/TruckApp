@@ -1,0 +1,29 @@
+﻿<div class="container outer-div">
+    <div class="inner-div">
+        <ng-include src="header_url"></ng-include>
+        <div class="border-div">
+            SELECTED SLOT BOOKINGS<br />
+            Please Select:
+        </div>
+        <div class="border-div">
+            ENTER A MESSAGE
+        </div>
+        <form role="form">
+            <div class="form-group">
+                <div class="message-list" ng-repeat="message in messages">
+                    <div class="booking-text">{{ message.current_datetime | date: 'medium' }} {{ currentBooking.DriverName }}: </div>
+                    <div>{{ message.text }}</div>
+                </div>
+            </div>
+            <div class="border-div form-group">
+                <textarea placeholder="Please enter text..." ng-model="message_text" class="form-control"></textarea>
+            </div>
+            <div class="border-div form-group">
+
+            </div>
+        </form>
+        <div class="border-div enter">
+            Enter <a href="javascript:void(0)" ng-click="addMessage()"> <img src="../assets/images/arrow_right.png" /></a>
+        </div>
+    </div>
+</div>

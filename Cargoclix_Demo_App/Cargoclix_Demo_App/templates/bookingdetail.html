@@ -1,0 +1,24 @@
+﻿<div class="container outer-div">
+    <div class="inner-div">        
+        <ng-include src="header_url"></ng-include>
+        <div class="border-div">
+            SELECTED SLOT BOOKINGS<br />
+            Please Select:
+        </div>
+        <div class="border-div">
+            {{ currentBooking.BookingDate }} {{ currentBooking.BookingTime }} {{ currentBooking.DriverName }}
+        </div>
+        <div class="border-div booking-operation">
+            I am on my way
+            <a href="javascript:void(0)" ng-click="displayMessage()"><img src="../assets/images/arrow_right.png" /></a>
+        </div>
+        <div class="border-div booking-operation">
+            Report a delay
+            <a href="/report-delay"><img src="../assets/images/arrow_right.png" /></a>
+        </div>
+        <div class="border-div booking-operation">
+            Enter a message
+            <a href="/messages"><img src="../assets/images/arrow_right.png" /></a>
+        </div>
+    </div>
+</div>

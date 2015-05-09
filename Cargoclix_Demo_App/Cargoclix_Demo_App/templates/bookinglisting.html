@@ -1,0 +1,23 @@
+﻿<div class="container outer-div">
+    <div class="inner-div">
+        <ng-include src="header_url"></ng-include>
+        <div class="border-div">
+            SLOT BOOKINGS<br />
+            Please Select:
+        </div>
+        <div ng-repeat="booking in bookings" class="border-div">
+            {{ booking.BookingDate }} {{ booking.BookingTime }} {{ booking.DriverName }}
+            <a href="/booking-detail" ng-click="setCurrentBooking(booking)">
+                <img src="../assets/images/arrow_right.png" />
+            </a>
+        </div>
+        <div class="border-div">
+            &nbsp;
+        </div>
+        <div class="border-div">
+            WITHOUT A BOOKING SLOT<br />
+            Advise your truck
+            <a href="javascipt:void(0);"><img src="../assets/images/arrow_right.png" /></a>
+        </div>
+    </div>
+</div>

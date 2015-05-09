@@ -1,0 +1,39 @@
+﻿<div class="container outer-div">
+    <div class="inner-div">
+        <ng-include src="header_url"></ng-include>
+        <div class="border-div">
+            REPORT A DELAY<br />
+        </div>
+        <div class="border-div">
+            {{ currentBooking.BookingDate }} {{ currentBooking.BookingTime }} {{ currentBooking.DriverName }}
+        </div>
+        <div class="border-div">
+            Please enter the new ETA:
+            <timepicker ng-model="delay_time" hour-step="hstep" minute-step="mstep" show-meridian="true"></timepicker>
+        </div>
+        <form role="form">
+            <div class="border-div form-group">
+                Reason for delay:<br />
+                <div class="radio">
+                    <label><input type="radio" ng-model="reason_for_delay" value="Traffic jam" ng-change="show_textbox=false">Traffic jam</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" ng-model="reason_for_delay" value="Breakdown" ng-change="show_textbox=false">Breakdown</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" ng-model="reason_for_delay" value="Accident" ng-change="show_textbox=false">Accident</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" ng-model="reason_for_delay" value="Free Text" ng-change="show_textbox=true"> Free Text</label>
+                </div>
+            </div>
+            <div class="border-div form-group" ng-show="show_textbox">
+                <textarea placeholder="Please enter text..." ng-model="reason_text" class="form-control"></textarea>
+            </div>
+            <div class="border-div form-group enter">
+                Enter <a href="javascript:void(0)" ng-click="saveReasonForDelay()"> <img src="../assets/images/arrow_right.png" /></a>
+            </div>
+        </form>
+        
+    </div>
+</div>

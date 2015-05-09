@@ -1,0 +1,6 @@
+D:\Haider\Nikolay-Cargoclix\Cargoclix_Demo_App\Cargoclix_Demo_App\bin\Cargoclix_Demo_App.dll.config
+D:\Haider\Nikolay-Cargoclix\Cargoclix_Demo_App\Cargoclix_Demo_App\bin\Cargoclix_Demo_App.dll
+D:\Haider\Nikolay-Cargoclix\Cargoclix_Demo_App\Cargoclix_Demo_App\bin\Cargoclix_Demo_App.pdb
+D:\Haider\Nikolay-Cargoclix\Cargoclix_Demo_App\Cargoclix_Demo_App\obj\Debug\Cargoclix_Demo_App.csprojResolveAssemblyReference.cache
+D:\Haider\Nikolay-Cargoclix\Cargoclix_Demo_App\Cargoclix_Demo_App\obj\Debug\Cargoclix_Demo_App.dll
+D:\Haider\Nikolay-Cargoclix\Cargoclix_Demo_App\Cargoclix_Demo_App\obj\Debug\Cargoclix_Demo_App.pdb

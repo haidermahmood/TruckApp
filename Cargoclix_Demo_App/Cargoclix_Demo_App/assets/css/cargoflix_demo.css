@@ -1,0 +1,60 @@
+﻿.message-list {
+    background-color: #eee;
+    padding: 10px;
+    font-style:italic;
+}
+
+.outer-div {
+    width: 100%;
+    text-align:center;
+}
+
+.inner-div {
+   margin-top: 20px;
+   display: inline-block;
+   text-align: left;
+   width:30%;
+}
+
+.heading-text{
+    text-align: center!important;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #000;
+}
+
+.sub-heading-text{
+    text-align: center!important;
+    font-size: 18px;
+}
+
+.border-div{
+    padding: 15px 0 15px 0;
+    border-bottom: solid 1px #000;
+}
+
+input[type="text"].login {
+    width: 80%!important;
+}
+
+a {
+    float:right;
+}
+
+.booking-operation {
+    font-style: italic;
+}
+
+textarea {
+    height:80px!important;
+    margin-top: -20px!important;
+}
+
+.booking-text{
+    font-weight:600;
+}
+
+.enter{
+    text-align: center;
+}
